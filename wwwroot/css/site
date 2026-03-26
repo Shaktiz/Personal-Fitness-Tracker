@@ -1,0 +1,86 @@
+/* ============================================================
+   wwwroot/css/site.css
+   Custom styles for FitnessTracker.
+   Bootstrap handles most of the heavy lifting — we just
+   add small tweaks here.
+============================================================ */
+
+/* Make the page fill full height so footer sticks to bottom */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+main {
+    flex: 1; /* Main content area stretches to fill space */
+}
+
+/* ---- Stat Cards on Dashboard ---- */
+.stat-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: default;
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.stat-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* ---- Card hover effects ---- */
+.card {
+    border-radius: 12px;
+}
+
+/* ---- Navbar active link ---- */
+.navbar-nav .nav-link.active {
+    font-weight: 600;
+}
+
+/* ---- Table styling ---- */
+.table th {
+    font-size: 0.85rem;
+    letter-spacing: 0.03em;
+}
+
+/* ---- Form inputs ---- */
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.15);
+}
+
+/* ---- Buttons ---- */
+.btn {
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+/* ---- Hero section on landing page ---- */
+.display-4 {
+    font-weight: 800;
+}
+
+/* ---- Progress bars ---- */
+.progress {
+    border-radius: 10px;
+}
+
+/* ---- Badge styles ---- */
+.badge {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
